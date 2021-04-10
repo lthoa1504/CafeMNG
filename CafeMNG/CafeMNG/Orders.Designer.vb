@@ -22,12 +22,12 @@ Partial Class Orders
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Orders))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -50,6 +50,8 @@ Partial Class Orders
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.Panel1.SuspendLayout()
         CType(Me.ItemDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BillDVG, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -73,18 +75,20 @@ Partial Class Orders
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.ForeColor = System.Drawing.Color.White
-        Me.Panel1.Location = New System.Drawing.Point(139, 38)
+        Me.Panel1.Location = New System.Drawing.Point(93, 25)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1142, 659)
+        Me.Panel1.Size = New System.Drawing.Size(761, 475)
         Me.Panel1.TabIndex = 2
         '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.DarkTurquoise
         Me.Button3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(783, 662)
+        Me.Button3.Location = New System.Drawing.Point(522, 430)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(227, 43)
+        Me.Button3.Size = New System.Drawing.Size(151, 28)
         Me.Button3.TabIndex = 25
         Me.Button3.Text = "Xem đơn đặt hàng"
         Me.Button3.UseVisualStyleBackColor = False
@@ -93,9 +97,10 @@ Partial Class Orders
         '
         Me.Button2.BackColor = System.Drawing.Color.DarkTurquoise
         Me.Button2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(256, 665)
+        Me.Button2.Location = New System.Drawing.Point(171, 432)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(143, 43)
+        Me.Button2.Size = New System.Drawing.Size(95, 28)
         Me.Button2.TabIndex = 24
         Me.Button2.Text = "In"
         Me.Button2.UseVisualStyleBackColor = False
@@ -105,9 +110,10 @@ Partial Class Orders
         Me.TotalLbl.AutoSize = True
         Me.TotalLbl.Font = New System.Drawing.Font("Times New Roman", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotalLbl.ForeColor = System.Drawing.Color.DarkTurquoise
-        Me.TotalLbl.Location = New System.Drawing.Point(542, 671)
+        Me.TotalLbl.Location = New System.Drawing.Point(361, 436)
+        Me.TotalLbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.TotalLbl.Name = "TotalLbl"
-        Me.TotalLbl.Size = New System.Drawing.Size(63, 25)
+        Me.TotalLbl.Size = New System.Drawing.Size(40, 17)
         Me.TotalLbl.TabIndex = 23
         Me.TotalLbl.Text = "Total:"
         '
@@ -116,9 +122,10 @@ Partial Class Orders
         Me.AddBillBtn.BackColor = System.Drawing.Color.DarkTurquoise
         Me.AddBillBtn.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddBillBtn.ForeColor = System.Drawing.Color.White
-        Me.AddBillBtn.Location = New System.Drawing.Point(874, 327)
+        Me.AddBillBtn.Location = New System.Drawing.Point(583, 213)
+        Me.AddBillBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.AddBillBtn.Name = "AddBillBtn"
-        Me.AddBillBtn.Size = New System.Drawing.Size(170, 39)
+        Me.AddBillBtn.Size = New System.Drawing.Size(113, 25)
         Me.AddBillBtn.TabIndex = 18
         Me.AddBillBtn.Text = "Thêm vào Bill"
         Me.AddBillBtn.UseVisualStyleBackColor = False
@@ -128,41 +135,44 @@ Partial Class Orders
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DarkTurquoise
-        Me.Label9.Location = New System.Drawing.Point(737, 58)
+        Me.Label9.Location = New System.Drawing.Point(491, 38)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(261, 34)
+        Me.Label9.Size = New System.Drawing.Size(169, 22)
         Me.Label9.TabIndex = 22
         Me.Label9.Text = "Danh sách sản phẩm"
         '
         'ItemDGV
         '
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Times New Roman", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ItemDGV.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Times New Roman", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ItemDGV.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
         Me.ItemDGV.BackgroundColor = System.Drawing.Color.White
         Me.ItemDGV.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ItemDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.ItemDGV.DefaultCellStyle = DataGridViewCellStyle2
-        Me.ItemDGV.Location = New System.Drawing.Point(436, 95)
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ItemDGV.DefaultCellStyle = DataGridViewCellStyle8
+        Me.ItemDGV.Location = New System.Drawing.Point(291, 62)
+        Me.ItemDGV.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ItemDGV.Name = "ItemDGV"
         Me.ItemDGV.RowHeadersWidth = 62
         Me.ItemDGV.RowTemplate.Height = 28
-        Me.ItemDGV.Size = New System.Drawing.Size(692, 205)
+        Me.ItemDGV.Size = New System.Drawing.Size(461, 133)
         Me.ItemDGV.TabIndex = 21
         '
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.DarkTurquoise
         Me.Button5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(256, 86)
+        Me.Button5.Location = New System.Drawing.Point(171, 56)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(143, 39)
+        Me.Button5.Size = New System.Drawing.Size(95, 25)
         Me.Button5.TabIndex = 20
         Me.Button5.Text = "Tạo mới"
         Me.Button5.UseVisualStyleBackColor = False
@@ -171,9 +181,10 @@ Partial Class Orders
         '
         Me.CatCb.Font = New System.Drawing.Font("Times New Roman", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CatCb.FormattingEnabled = True
-        Me.CatCb.Location = New System.Drawing.Point(35, 86)
+        Me.CatCb.Location = New System.Drawing.Point(23, 56)
+        Me.CatCb.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CatCb.Name = "CatCb"
-        Me.CatCb.Size = New System.Drawing.Size(194, 31)
+        Me.CatCb.Size = New System.Drawing.Size(131, 23)
         Me.CatCb.TabIndex = 18
         '
         'Label7
@@ -181,56 +192,58 @@ Partial Class Orders
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.DarkTurquoise
-        Me.Label7.Location = New System.Drawing.Point(429, 363)
+        Me.Label7.Location = New System.Drawing.Point(286, 236)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(272, 41)
+        Me.Label7.Size = New System.Drawing.Size(187, 27)
         Me.Label7.TabIndex = 17
         Me.Label7.Text = "Đơn hàng của bạn"
         '
         'BillDVG
         '
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Times New Roman", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gold
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.DarkTurquoise
-        Me.BillDVG.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Times New Roman", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Gold
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.DarkTurquoise
+        Me.BillDVG.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
         Me.BillDVG.BackgroundColor = System.Drawing.Color.White
         Me.BillDVG.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Gold
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BillDVG.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Gold
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BillDVG.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
         Me.BillDVG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BillDVG.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.BillDVG.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Times New Roman", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.BillDVG.DefaultCellStyle = DataGridViewCellStyle11
         Me.BillDVG.GridColor = System.Drawing.SystemColors.Control
-        Me.BillDVG.Location = New System.Drawing.Point(52, 422)
+        Me.BillDVG.Location = New System.Drawing.Point(23, 274)
+        Me.BillDVG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BillDVG.Name = "BillDVG"
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkTurquoise
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Times New Roman", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BillDVG.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.DarkTurquoise
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Times New Roman", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BillDVG.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
         Me.BillDVG.RowHeadersWidth = 62
         Me.BillDVG.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Gold
         Me.BillDVG.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.DarkTurquoise
         Me.BillDVG.RowTemplate.Height = 28
-        Me.BillDVG.Size = New System.Drawing.Size(1007, 208)
+        Me.BillDVG.Size = New System.Drawing.Size(729, 135)
         Me.BillDVG.TabIndex = 16
         '
         'Column1
@@ -272,9 +285,10 @@ Partial Class Orders
         '
         Me.QuantityTb.Font = New System.Drawing.Font("Century Gothic", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.QuantityTb.ForeColor = System.Drawing.Color.DimGray
-        Me.QuantityTb.Location = New System.Drawing.Point(728, 331)
+        Me.QuantityTb.Location = New System.Drawing.Point(485, 215)
+        Me.QuantityTb.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.QuantityTb.Name = "QuantityTb"
-        Me.QuantityTb.Size = New System.Drawing.Size(125, 27)
+        Me.QuantityTb.Size = New System.Drawing.Size(85, 21)
         Me.QuantityTb.TabIndex = 9
         '
         'Label2
@@ -282,9 +296,10 @@ Partial Class Orders
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkTurquoise
-        Me.Label2.Location = New System.Drawing.Point(612, 331)
+        Me.Label2.Location = New System.Drawing.Point(408, 215)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 25)
+        Me.Label2.Size = New System.Drawing.Size(63, 17)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Số lượng:"
         '
@@ -293,9 +308,10 @@ Partial Class Orders
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DarkTurquoise
-        Me.Label3.Location = New System.Drawing.Point(483, 21)
+        Me.Label3.Location = New System.Drawing.Point(322, 14)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(170, 41)
+        Me.Label3.Size = New System.Drawing.Size(114, 27)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Quản lí SP"
         '
@@ -303,9 +319,10 @@ Partial Class Orders
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.DarkTurquoise
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1272, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(848, 1)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(58, 30)
+        Me.PictureBox1.Size = New System.Drawing.Size(39, 19)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 28
         Me.PictureBox1.TabStop = False
@@ -316,22 +333,35 @@ Partial Class Orders
         Me.Label8.BackColor = System.Drawing.Color.DarkTurquoise
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 11.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(12, 672)
+        Me.Label8.Location = New System.Drawing.Point(6, 480)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(121, 25)
+        Me.Label8.Size = New System.Drawing.Size(83, 20)
         Me.Label8.TabIndex = 27
         Me.Label8.Text = "Đăng xuất"
         '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Document = Me.PrintDocument1
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
+        '
         'Orders
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.ClientSize = New System.Drawing.Size(1332, 753)
+        Me.ClientSize = New System.Drawing.Size(888, 511)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Orders"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Orders"
@@ -366,4 +396,6 @@ Partial Class Orders
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label8 As Label
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class

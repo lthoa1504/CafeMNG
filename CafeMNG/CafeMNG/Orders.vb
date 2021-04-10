@@ -128,6 +128,10 @@ Public Class Orders
 
     End Sub
 
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
     Private Sub AddBillBtn_Click(sender As Object, e As EventArgs) Handles AddBillBtn.Click
         If key = 0 Then
             MsgBox("chọn sản phẩm")
