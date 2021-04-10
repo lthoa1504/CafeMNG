@@ -6,4 +6,8 @@
     Private Sub Item_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub ItPriceTb_TextChanged(sender As Object, e As EventArgs) Handles ItPriceTb.TextChanged
+
+    End Sub
 End Class
